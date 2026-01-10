@@ -4,3 +4,7 @@ body{
     margin: auto;
     padding: 20px;
 }
+em{
+    color: #555;
+    font-style: italic;
+}
