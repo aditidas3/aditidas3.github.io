@@ -1,251 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditi - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aditi - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<div class="container">
+<div class="header">
+  <p class="name">Aditi Das</p>
+</div>
+<div class="accent-strip"><span style="background:#0C447C;"></span><span style="background:#85B7EB;"></span></div>
+<div class="layout">
+  <div class="sidebar">
+  <p class="role">Data scientist &amp; engineer <br/> Available for work</p>
 
   <nav>
-    <span class="nav-name">Aditi Das</span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul>
+      <li><a class="tab active" data-tab="about">About</a></li>
+      <li><a class="tab" data-tab="projects">Projects</a></li>
+      <li><a class="tab" data-tab="experience">Experience</a></li>
+      <li><a class="tab" data-tab="contact">Contact</a></li>
     </ul>
   </nav>
+  </div>
 
-  <section class="hero">
-    <p class="hero-eyebrow">Available for work · Based in San Diego</p>
-    <h1>Data scientist,<em>analyst</em> &amp; builder.</h1>
-    <p class="hero-desc">
-      Data modeling, analysis, and pipelines - I make data actually useful.
-    </p>
-    <a href="#projects" class="hero-cta">View my work &nbsp;→</a>
-  </section>
-
-  <section class="section" id="about">
-    <p class="section-label">About</p>
-    <p class="about-text">
-      I'm a data scientist and engineer with 6 years of software engineering. Now specialized in data modeling, NLP systems, and knowledge pipelines - 
-bringing an engineering mindset to every layer of the stack. Currently building an LLM-powered pipeline that extracts and maps data into a knowledge graph.
-    </p>
-    <div class="skills-grid">
-      <div class="skills-col">
-        <h3>Languages</h3>
-        <div class="skill-tags">
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Spark</span>
-          <span class="tag">Dask</span>
-        </div>
-      </div>
-      <div class="skills-col">
-        <h3>Tools</h3>
-        <div class="skill-tags">
-          <span class="tag">Neo4j</span>
-          <span class="tag">Git</span>
-          <span class="tag">AWS</span>
-          <span class="tag">Salesforce CRM</span>
-        </div>
-      </div>
-      <div class="skills-col">
-        <h3>Domains</h3>
-        <div class="skill-tags">
-          <span class="tag">NLP / NER</span>
-          <span class="tag">Knowledge Graphs</span>
-          <span class="tag">ETL</span>
-          <span class="tag">Data Modeling</span>
-          <span class="tag">LLM</span>
-        </div>
-      </div>
-      <div class="skills-col">
-        <h3>Visualization & BI</h3>
-        <div class="skill-tags">
-          <span class="tag">Tableu</span>
-          <span class="tag">MAtplotlib</span>
-          <span class="tag">Seaborn</span>
-        </div>
+  <div class="content">
+    <div class="panel active" id="about">
+      <h1>About</h1>
+      <p class="about-text">I'm a data scientist and engineer with six years of software engineering experience,
+         now specialized in data science, machine learning models, NLP systems, and knowledge graph pipelines 
+         — bringing an engineering mindset to every layer of the stack. Recent work spans extraction of hetrogeneous
+         documents into Knowledge Groph into interactive queryable dashboard and Agentic-AI application that checks 
+         the gap between JD and resume and tailor it.</p>
+      <div class="skills-flow">
+        <span class="skill-box">Python</span>
+        <span class="skill-box">SQL</span>
+        <span class="skill-box">Spark</span>
+        <span class="skill-box">Neo4j</span>
+        <span class="skill-box">Git</span>
+        <span class="skill-box">Knowledge Graphs</span>
+        <span class="skill-box">ETL</span>
+        <span class="skill-box">LLM Agents</span>
+        <span class="skill-box">Tableau</span>
+        <span class="skill-box">Scikit-Learn</span>
       </div>
     </div>
-  </section>
 
-  <section class="section" id="projects">
-    <p class="section-label">Projects</p>
-    <div class="projects-list">
-
-      <a class="project-item" href="https://github.com/aditidas3/AI-Augmented-Evidence-Exploration-in-Internal-Communications" target="_blank">
-        <div>
-          <div class="project-title">AIDE - AI Drive Evidence Exploration</div>
-          <div class="project-desc">
-            <p>Thousands of documents. Buried connections. No way to trace how decisions, people, and products link across
-               decades of records.</p>
-            <p>We built an AI-native pipeline that transforms raw documents — PDFs, emails, spreadsheets, presentations, plaintext 
-              — into a queryable knowledge graph. LLMs extract entities and relationships, which are loaded into a page-anchored graph 
-              where every finding traces back to its exact source. Researchers query in natural language through an interactive dashboard
-               and receive evidence chains with full provenance — replacing manual document review with structured, 
-               explainable insights.</p>
-          </div>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">LLM APIs</span>
-            <span class="tag">Neo4j</span>
-            <span class="tag">Cypher</span>
-            <span class="tag">NLP</span>
-            <span class="tag">ReactJS</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">PostgreSQL;Qdrant;Solr</span>
-          </div>
+    <div class="panel" id="projects">
+      <h1>Projects</h1>
+      <div class="project">
+        <div class="project-head">
+          <p class="project-title"><a href="#" target="_blank">AIDE — AI-Driven Evidence Exploration</a></p>
+          <span class="project-year">Jan 2026</span>
         </div>
-        <div class="project-right">
-          <span class="project-year">Jan 2026 - Jun 2026</span>
-          <span class="project-arrow">↗</span>
-        </div>
-      </a>
-
-      <a class="project-item" href="https://github.com/aditidas3/Sephora_product_review_analysis" target="_blank">
-        <div>
-          <div class="project-title">Sephora Product Review Analysis </div>
-          <p>Millions of product reviews. Real opinions about what works, what doesn't, and why — buried in 
-              free-form text no rating system could capture.</p>
-            <p>Analyzed 50K+ Sephora customer reviews to surface sentiment, skincare concerns, and recommendation 
-              signals hidden in unstructured text. Progressed from a baseline logistic regression to tree-based 
-              models and XGBoost, reaching an AUC of 0.83 — and found that review sentiment and topic-level 
-              concerns were the strongest predictors of whether a customer would recommend a product.</p>
-          <div class="skill-tags">
-            <span class="tag">Supervised Classification</span>
-            <span class="tag">Python/Pandas</span>
-            <span class="tag">Scikit-learn</span>
-            <span class="tag">NLTK</span>
-            <span class="tag">VADER</span>
-            <span class="tag">TextBlob</span>
-            <span class="tag">XGBoost</span>
-            <span class="tag">Matplotlib/Seaborn</span>
-          </div>
-        </div>
-        <div class="project-right">
-          <span class="project-year">Sep 2024 - Dec 2024</span>
-          <span class="project-arrow">↗</span>
-        </div>
-      </a>
-      
-      <a class="project-item" href="https://github.com/aditidas3/CDC_BRFSS_project" target="_blank">
-        <div>
-          <div class="project-title">Population Health Survey Clustering Analysis</div>
-          <div class="project-desc">
-            <p>994 survey features. Vague, overlapping clusters. A model that looked clean on paper but said
-               little about real behavioral patterns.</p>
-            <p>Applied K-Means clustering to CDC BRFSS survey data, then layered in PCA to cut the feature space 
-              from 994 to 413 dimensions while retaining 95% of variance. The reduction made the pipeline faster — 
-              but also surfaced a clearer diagnosis: negative silhouette scores and misaligned clusters revealed 
-              that K-Means couldn't capture the data's true structure, pointing toward density-based methods like 
-              DBSCAN or Gaussian Mixture Models as the better next step.</p>
-          </div>
-          <div class="skill-tags">
-            <span class="tag">Unsupervised Learning</span>
-            <span class="tag">Python/Pandas</span>
-            <span class="tag">Scikit-learn</span>
-            <span class="tag">PCA</span>
-            <span class="tag">K-Means</span>
-            <span class="tag">Matplotlib/Seaborn</span>
-          </div>
-        </div>
-        <div class="project-right">
-          <span class="project-year">Sep 2025 - Dec 2025</span>
-          <span class="project-arrow">↗</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <section class="section" id="experience">
-    <p class="section-label">Experience</p>
-    <div class="exp-list">
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <span class="exp-role">Consultant</span>
-          <span class="exp-period">Mar 2022 - Aug 2023</span>
-        </div>
-        <div class="exp-company">Deloitte USI</div>
-        <p class="exp-desc">
-          Delivered two end-to-end Salesforce CPQ implementations, translating business requirements into pricing logic,
-          workflow automation, and scalable data models. Worked directly with stakeholders across the process,
-          from requirements gathering to custom development in Apex, Visualforce, and LWC.
-        </p>
+        <p>An AI-native pipeline turning raw documents into a queryable knowledge graph — 
+           LLMs extract entities and relationships from hetrogeneous documents into a page-anchored graph called KG0.
+           An interactive dashboard then presents the evidence backed subgraphs with explainable 
+           reasoning and source provenance derived from KG0 for each user question.</p>
       </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <span class="exp-role">Sr. Software Engineer</span>
-          <span class="exp-period">Apr 2020 - Mar 2022</span>
+      <div class="project">
+        <div class="project-head">
+          <p class="project-title"><a href="#" target="_blank">JD-to-Resume Gap &amp; Tailoring Agent</a></p>
+          <span class="project-year">Jul 2026</span>
         </div>
-        <div class="exp-company">Lister Technologies (acquired by Bounteous Sol.)</div>
-        <p class="exp-desc">Contributed to the development and customization of Sales, Service, and CPQ cloud solutions, reporting and data analysis.
-            Played a key role in building the App Analyzer AppExchange app to track usage patterns of installed packages and applications,
-             analyze their data impact, and assess application productivity and organizational health through reporting.
-        </p>
+        <p>An agentic-ai application that reads a job description and a resume side by side, surfaces the gaps between them, 
+          and drafts tailored edits — built with LangGraph and DeepSeek.</p>
       </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <span class="exp-role">Web Developer</span>
-          <span class="exp-period">Nov 2017 - Apr 2020</span>
+      <div class="project">
+        <div class="project-head">
+          <p class="project-title"><a href="#" target="_blank">Sephora Product Review Analysis</a></p>
+          <span class="project-year">Sep 2024</span>
         </div>
-        <div class="exp-company">Cognizant Technology Solutions</div>
-        <p class="exp-desc">Developed and maintained web applications built on Drupal for a healthcare client,
-             supporting structured content management. Supported e-commerce website and internal systems built on Magento 1.7 & CakePHP 3.0
-        </p>
+        <p>Applied LDA topic modeling to negative and neutral reviews to surface skincare concern themes 
+          — acne, dryness/sensitivity, sun protection, eye care and analyzed across skin types and product 
+          categories, then fed sentiment and topic features into a recommendation model 
+          (logistic regression → XGBoost) reaching ~96% accuracy and 0.98 AUC-ROC, with sentiment and rating 
+          as the strongest predictors for ~1.1M Sephora product reviews</p>
+      </div>
+      <div class="project">
+        <div class="project-head">
+          <p class="project-title"><a href="#" target="_blank">Population Health Survey Clustering</a></p>
+          <span class="project-year">Sep 2025</span>
+        </div>
+        <p>Application of K-Means with PCA-based dimensionality reduction (994 → 82 features, 95% variance retained)
+           to CDC BRFSS data to identify population segments, then diagnosed K-Means' limits on categorical data via 
+           silhouette score and recommends DBSCAN or Gaussian Mixture Models instead.</p>
       </div>
     </div>
-    </section>
 
-    <section class="section" id="education">
+    <div class="panel" id="experience">
+      <h1>Experience</h1>
+      <div class="exp-item">
+        <div class="exp-head">
+          <p class="exp-title">Consultant, Deloitte</p>
+          <span class="exp-period">Mar 2022 – Aug 2023</span>
+        </div>
+        <p class="exp-desc">Led two Salesforce CPQ implementations, building pricing logic,
+           configuration workflows, and data architectures — translating business requirements into
+            structured systems for analytics and reporting. Coordinated with cross-functional teams and stakeholders
+             to deliver on tight deadlines in a fast-paced consulting environment.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-head">
+          <p class="exp-title">Sr. Software Engineer, Lister Technologies</p>
+          <span class="exp-period">Apr 2020 – Mar 2022</span>
+        </div>
+        <p class="exp-desc">Developed and customized Sales, Service, and CPQ cloud solutions, including reporting
+           and analysis. Played a key role in building the App Analyzer AppExchange app — defining key metrics to 
+           track application usage, productivity, and organizational health, enabling evaluation of 
+           package impact.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-head">
+          <p class="exp-title">Web Developer, Cognizant Technology Solutions</p>
+          <span class="exp-period">Nov 2017 – Apr 2020</span>
+        </div>
+        <p class="exp-desc">Developed and supported web applications and e-commerce systems on Drupal 7, Magento 1.7, 
+          and CakePHP 3.0 for healthcare and retail clients, improving application reliability and maintaining 
+          structured content management systems</p>
+      </div>
+
       <p class="section-label">Education</p>
       <div class="exp-item">
-        <div class="exp-header">
-          <span class="exp-role">University of California, San Diego · MS in Data Science & Engineering</span>
-          <span class="exp-period">2024 - 2026</span>
+        <div class="exp-head">
+          <p class="exp-title">M.S. Data Science &amp; Engineering, UC San Diego</p>
+          <span class="exp-period">2024 – 2026</span>
         </div>
-        <p class="exp-desc">Machine Learning, Data Analysis, NLP, Big Data, RDBMS, Data Visualization</p>
-      </div>
-    </section>
-    
-  
-
-  <section class="section" id="contact">
-    <p class="section-label">Contact</p>
-    <div class="contact-block">
-      <div class="contact-line">
-        <span class="contact-lbl">Email</span>
-        <a class="contact-link" href="mailto:aditidas71@gmail.com">aditidas71@gmail.com</a>
-      </div>
-      <div class="contact-line">
-        <span class="contact-lbl">GitHub</span>
-        <a class="contact-link" href="https://github.com/aditidas3" target="_blank">github.com/aditidas3</a>
-      </div>
-      <div class="contact-line">
-        <span class="contact-lbl">LinkedIn</span>
-        <a class="contact-link" href="https://www.linkedin.com/in/aditi-das3" target="_blank">linkedin.com/in/aditi-das3</a>
-      </div>
-      <div class="contact-line">
-        <span class="contact-lbl">Resume</span>
-        <a class="contact-link" href="Resume.pdf" target="_blank">Download PDF</a>
+        <div class="skills-flow" style="margin-top:10px;">
+          <span class="skill-box">Machine Learning</span>
+          <span class="skill-box">Statistics</span>
+          <span class="skill-box">ETL</span>
+          <span class="skill-box">Big Data</span>
+          <span class="skill-box">RDBMS</span>
+          <span class="skill-box">Data Visualization</span>
+        </div>
+        <p class="exp-desc" style="margin-top:10px;">GPA: 3.85</p>
       </div>
     </div>
-  </section>
-<!--
-  <footer>
-    <span class="footer-note">© 2025 Aditi Das</span>
-    <span class="footer-note">Built with HTML &amp; care.</span>
-  </footer>
--->
+
+    <div class="panel" id="contact">
+      <h1>Contact</h1>
+      <div class="contact-line"><span class="contact-lbl">Email</span><a class="contact-link" href="mailto:aditidas71@gmail.com" target="_blank" rel="noopener noreferrer">aditidas71@gmail.com</a></div>
+      <div class="contact-line"><span class="contact-lbl">GitHub</span><a class="contact-link" href="https://github.com/aditidas3" target="_blank" rel="noopener noreferrer">github.com/aditidas3</a></div>
+      <div class="contact-line"><span class="contact-lbl">LinkedIn</span><a class="contact-link" href="https://www.linkedin.com/in/aditi-das3" target="_blank" rel="noopener noreferrer">linkedin.com/in/aditi-das3</a></div>
+      <div class="contact-line"><span class="contact-lbl">Resume</span><a class="contact-link" href="Resume.pdf" rel="noopener noreferrer">Download PDF</a></div>
+    </div>
+  </div>
 </div>
+
+<script>
+  document.querySelectorAll('.tab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>
